@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#146b52">
+  <meta name="description" content="نور - رفيقك اليومي للقرآن الكريم والأذكار والسبحة والأحاديث واتجاه القبلة.">
+  <title>نور | رفيق المسلم</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="نور - الصفحة الرئيسية">
+      <span class="brand-mark">ن</span>
+      <span><strong>نُور</strong><small>رفيق المسلم</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="التنقل الرئيسي">
+      <a href="#home">الرئيسية</a><a href="#quran">القرآن</a><a href="#adhkar">الأذكار</a>
+      <a href="#tasbih">السبحه</a><a href="#hadith">الحديث</a><a href="#qibla">القبلة</a>
+    </nav>
+    <button id="themeToggle" class="icon-button" aria-label="تغيير المظهر" title="تغيير المظهر">☾</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <span class="eyebrow">✦ مساحة هادئة ليومك</span>
+        <h1>خلّي لنور ربنا<br><span>مكان في يومك.</span></h1>
+        <p>اقرأ، واذكر، وتعلّم. أدوات إسلامية بسيطة تجمعها في مكان واحد.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#quran">ابدأ القراءة <span>←</span></a>
+          <a class="button secondary" href="#adhkar">أذكار اليوم</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="crescent">☾</div><div class="star star-one">✦</div><div class="star star-two">✧</div>
+        <div class="art-caption"><span>﴿</span> وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ <span>﴾</span></div>
+      </div>
+    </section>
+
+    <section class="daily section">
+      <div class="section-heading">
+        <div><span class="eyebrow">وقفة مع القرآن</span><h2>آية اليوم</h2></div>
+        <span class="pill">تذكير يومي</span>
+      </div>
+      <article class="verse-card">
+        <span class="quote-mark">۞</span>
+        <p class="quran-text">فَإِنَّ مَعَ الْعُسْرِ يُسْرًا ۝ إِنَّ مَعَ الْعُسْرِ يُسْرًا</p>
+        <p class="verse-source">سورة الشرح · الآيتان ٥–٦</p>
+        <button class="text-button" id="copyVerse">نسخ الآية ↗</button>
+      </article>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-heading">
+        <div><span class="eyebrow">كل ما تحتاجه</span><h2>رفيقك اليومي</h2></div>
+        <p class="muted">اختار القسم وابدأ</p>
+      </div>
+      <div class="feature-grid">
+        <a class="feature-card" href="#quran"><span class="feature-icon green">۞</span><h3>القرآن الكريم</h3><p>مساحة للقراءة والتدبّر والبحث.</p><span class="card-arrow">←</span></a>
+        <a class="feature-card" href="#adhkar"><span class="feature-icon sand">☼</span><h3>الأذكار</h3><p>أذكار الصباح والمساء وأذكار متنوعة.</p><span class="card-arrow">←</span></a>
+        <a class="feature-card" href="#tasbih"><span class="feature-icon lilac">◉</span><h3>السبحة الإلكترونية</h3><p>سبّح واحفظ عدّك على جهازك.</p><span class="card-arrow">←</span></a>
+        <a class="feature-card" href="#hadith"><span class="feature-icon blue">✧</span><h3>الحديث الشريف</h3><p>أحاديث مختارة مع المصدر.</p><span class="card-arrow">←</span></a>
+        <a class="feature-card" href="#sunnah"><span class="feature-icon pink">♡</span><h3>سنن يومية</h3><p>تذكيرات بسيطة لسنن اليوم.</p><span class="card-arrow">←</span></a>
+        <a class="feature-card" href="#qibla"><span class="feature-icon gold">⌖</span><h3>اتجاه القبلة</h3><p>احسب اتجاه القبلة من موقعك.</p><span class="card-arrow">←</span></a>
+      </div>
+    </section>
+
+    <section id="quran" class="section content-section">
+      <div class="section-heading"><div><span class="eyebrow">كلام الله</span><h2>القرآن الكريم</h2></div></div>
+      <div class="panel">
+        <div class="panel-top"><div><h3>المصحف الشريف كاملًا</h3><p class="muted">114 سورة — يتم جلب النص العربي من واجهة القرآن الكريم.</p></div><span class="feature-icon green">۞</span></div>
+        <div class="quran-tools">
+          <div><label class="field-label" for="surahSelect">اختار السورة</label><select id="surahSelect" class="field"><option value="">جارٍ تحميل السور…</option></select></div>
+          <div><label class="field-label" for="ayahSearch">ابحث داخل السورة المفتوحة</label><input id="ayahSearch" class="field" type="search" placeholder="اكتب كلمة من الآية"></div>
+        </div>
+        <div class="quran-meta"><span id="surahMeta">جارٍ تحميل بيانات المصحف…</span><button class="button secondary" id="saveReading">حفظ موضع القراءة</button></div>
+        <p id="quranStatus" class="muted small" aria-live="polite">أول تحميل يحتاج إنترنت. بعد التحميل، النص المعروض هو نص السورة المختارة.</p>
+        <div id="quranVerses" class="quran-reader" aria-live="polite"><p class="muted">جاري تحميل القرآن الكريم…</p></div>
+      </div>
+    </section>
+
+    <section id="adhkar" class="section content-section">
+      <div class="section-heading"><div><span class="eyebrow">ذكر وطمأنينة</span><h2>الأذكار</h2></div></div>
+      <div class="panel">
+        <div class="tabs" role="group" aria-label="اختيار الأذكار">
+          <button class="tab active" data-adhkar="morning">الصباح</button>
+          <button class="tab" data-adhkar="evening">المساء</button>
+          <button class="tab" data-adhkar="general">أذكار متنوعة</button>
+        </div>
+        <article class="dhikr-card">
+          <p id="dhikrText" class="quran-text">أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ</p>
+          <p id="dhikrNote" class="muted">من أذكار الصباح — راجع النص الكامل ومصدره قبل النشر.</p>
+          <div class="dhikr-controls"><span>التكرار</span><div class="stepper"><button id="repMinus" aria-label="تقليل التكرار">−</button><strong id="repCount">0</strong><button id="repPlus" aria-label="زيادة التكرار">+</button></div><button class="button primary" id="dhikrDone">تم الذكر ✓</button></div>
+        </article>
+        <p class="muted small">هذه عينة تجريبية قصيرة. قبل نشر الموقع، أضف نصوص الأذكار كاملة مع التخريج من مصدر موثوق.</p>
+      </div>
+    </section>
+
+    <section id="tasbih" class="section content-section">
+      <div class="section-heading"><div><span class="eyebrow">سبّح براحتك</span><h2>السبحة الإلكترونية</h2></div></div>
+      <div class="panel tasbih-panel">
+        <label class="field-label" for="tasbihType">اختار الذكر</label>
+        <select id="tasbihType" class="field">
+          <option>سبحان الله</option><option>الحمد لله</option><option>الله أكبر</option><option>أستغفر الله</option><option>لا إله إلا الله</option>
+        </select>
+        <div class="counter-ring"><span class="counter-label">عدد التسبيحات</span><strong id="tasbihCount">0</strong><span id="tasbihTargetLabel">هدفك: 33</span></div>
+        <label class="field-label" for="tasbihTarget">الهدف</label>
+        <select id="tasbihTarget" class="field narrow"><option value="33">33 مرة</option><option value="99">99 مرة</option><option value="100">100 مرة</option><option value="0">بدون هدف</option></select>
+        <div class="tasbih-actions"><button id="tasbihReset" class="button secondary">إعادة ضبط</button><button id="tasbihButton" class="button primary big-button">سبّح الآن +</button></div>
+        <p id="tasbihMessage" class="muted small" aria-live="polite">العدد بيتحفظ تلقائيًا على نفس الجهاز.</p>
+      </div>
+    </section>
+
+    <section id="hadith" class="section content-section">
+      <div class="section-heading"><div><span class="eyebrow">من هدي النبي ﷺ</span><h2>الحديث الشريف</h2></div></div>
+      <div class="panel">
+        <label class="field-label" for="hadithSelect">اختار حديثًا مشهورًا</label>
+        <select id="hadithSelect" class="field">
+          <option value="0">إنما الأعمال بالنيات</option>
+          <option value="1">بني الإسلام على خمس</option>
+          <option value="2">المسلم من سلم المسلمون من لسانه ويده</option>
+          <option value="3">لا يؤمن أحدكم حتى يحب لأخيه ما يحب لنفسه</option>
+          <option value="4">فليقل خيرًا أو ليصمت</option>
+          <option value="5">الدين النصيحة</option>
+          <option value="6">من كان في حاجة أخيه كان الله في حاجته</option>
+        </select>
+        <article class="hadith-card hadith-display">
+          <span class="feature-icon sand">❞</span>
+          <p id="hadithText" class="quran-text">«إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ»</p>
+          <p id="hadithSource" class="muted">المصدر: صحيح البخاري، حديث رقم ١.</p>
+          <p id="hadithExplanation">النية أساس العمل، وبها يُعرف المقصود منه.</p>
+          <button class="text-button" id="copyHadith">نسخ الحديث ↗</button>
+        </article>
+      </div>
+      <p class="muted small">الأحاديث المعروضة مختارة من مصادر مشهورة، ويُفضّل التحقق من ألفاظها وأرقامها بحسب طبعة المصدر قبل نشر مكتبة عامة.</p>
+    </section>
+
+    <section id="sunnah" class="section content-section">
+      <div class="section-heading"><div><span class="eyebrow">خطوات بسيطة</span><h2>سنن يومية</h2></div></div>
+      <div class="panel checklist">
+        <label><input type="checkbox" data-sunnah="morning"> أذكار الصباح</label>
+        <label><input type="checkbox" data-sunnah="prayer"> المحافظة على السنن الرواتب</label>
+        <label><input type="checkbox" data-sunnah="kindness"> الكلمة الطيبة وحسن الخلق</label>
+        <label><input type="checkbox" data-sunnah="evening"> أذكار المساء</label>
+        <p class="muted small">اختياراتك بتتحفظ على جهازك، وتقدر تغيّرها في أي وقت.</p>
+      </div>
+    </section>
+
+    <section id="qibla" class="section content-section">
+      <div class="section-heading"><div><span class="eyebrow">وجهتك للصلاة</span><h2>اتجاه القبلة</h2></div></div>
+      <div class="panel qibla-panel">
+        <div class="compass" id="compass" aria-label="بوصلة اتجاه القبلة"><div class="compass-n">شمال</div><div class="compass-e">شرق</div><div class="compass-s">جنوب</div><div class="compass-w">غرب</div><div class="compass-needle" id="compassNeedle">▲</div><span class="compass-center"></span></div>
+        <div class="qibla-info"><h3 id="qiblaHeading">احسب اتجاه القبلة</h3><p class="muted">اسمح باستخدام موقعك لحساب الاتجاه التقريبي من إحداثيات جهازك. لازم يكون الجهاز أفقيًا، وقد لا تدعم بعض الأجهزة قراءة اتجاه البوصلة.</p><div class="qibla-actions"><button class="button primary" id="qiblaButton">حساب القبلة</button><button class="button secondary" id="compassPermission">معايرة اتجاه الجهاز</button></div><p id="qiblaResult" class="small muted" aria-live="polite">لن يتم طلب موقعك إلا عند الضغط على الزر.</p></div>
+      </div>
+      <p class="muted small">النتيجة حساب جغرافي تقريبي وليست بديلًا عن التحقق من اتجاه البوصلة أو سؤال جهة موثوقة عند الحاجة.</p>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">ن</span><span><strong>نُور</strong><small>رفيق المسلم</small></span></a><p>اللهم اجعل هذا العمل نافعًا وخالصًا لوجهك الكريم.</p><span class="muted small">نسخة تجريبية قابلة للتطوير · © <span id="year"></span> نور</span></footer>
+  <nav class="mobile-nav" aria-label="التنقل السريع">
+    <a href="#home"><span>⌂</span>الرئيسية</a><a href="#quran"><span>۞</span>القرآن</a><a href="#adhkar"><span>☼</span>الأذكار</a><a href="#tasbih"><span>◉</span>السبحة</a><a href="#qibla"><span>⌖</span>القبلة</a>
+  </nav>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
